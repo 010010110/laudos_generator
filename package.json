@@ -1,0 +1,28 @@
+{
+  "name": "laudos_generator",
+  "version": "1.0.0",
+  "description": "gerar laudos  de veiculos com base de dados de veiculos apreendidos e envio de imagens para avaliação de classificação para leilões.",
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/010010110/laudos_generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/010010110/laudos_generator/issues"
+  },
+  "homepage": "https://github.com/010010110/laudos_generator#readme"
+}

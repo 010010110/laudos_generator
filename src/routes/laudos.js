@@ -1,15 +1,13 @@
 const express = require('express');
-const Auction = require('../models/laudos/Laudos.js');
+const Laudos = require('../models/Laudos.js');
 const router = express.Router();
 
+
 router.get('/:placa', async (req, res) => {
-    
+    const placa = req.params.placa;
+    const response = await new Laudos().getLaudo(placa);
+
+    res.send(response);
 });
 
-router.get('/', async (req, res) => {
-    
-});
-
-router.post('/newlaudo', async (req, res) => {
-    
-});
+module.exports = router;
